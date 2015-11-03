@@ -1,0 +1,22 @@
+<h1>Add new</h1>
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <%= form_for [:admin, @movie] do |f| %>
+        <%= f.label :title %>
+        <%= f.text_field :title, class: 'form-control', placeholder: 'Movie title' %>
+        <%= f.label :description %>
+        <%= f.text_area :description, class: 'form-control', placeholder: 'Movie description' %>
+        <%= f.label 'Tags' %>
+        <%= f.text_field :all_tags, class: 'form-control', placeholder: 'Comma separated tags' %>
+        <%= f.label :author %>
+        <%= f.text_field :author, class: 'form-control', placeholder: 'Movie author' %>
+        <%= f.label :url %>
+        <%= f.text_field :url, class: 'form-control', placeholder: 'Movie url' %>
+        <%= f.label :image_url %>
+        <%= f.text_field :image_url, class: 'form-control', placeholder: 'Movie poster image url' %>
+        <hr/>
+        <%= f.submit 'Save', class: 'btn btn-primary' %>
+        <%= link_to 'Cancel', admin_movies_path, class: 'btn btn-warning' %>
+    <% end %>
+  </div>
+</div>

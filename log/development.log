@@ -2308,3 +2308,1429 @@ Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934c
 
 
 Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-26 23:32:00 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-03 01:52:18 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.4) lib/active_record/migration.rb:392:in `check_pending!'
+  activerecord (4.2.4) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/mist/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/mist/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/mist/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (20.9ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (9.4ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (8.3ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (203.5ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.9ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.9ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (147.5ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (5.0ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (380.5ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateMovies (20151018222053)
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36m (1.0ms)[0m  [1mCREATE TABLE "movies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "description" varchar, "url" varchar, "author" varchar, "image_url" varchar, "rating" integer, "published" boolean, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (0.6ms)[0m  [1mCREATE  INDEX "index_movies_on_user_id" ON "movies" ("user_id")[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20151018222053"]]
+  [1m[36m (125.2ms)[0m  [1mcommit transaction[0m
+Migrating to CreatePlaylists (20151018222659)
+  [1m[35m (0.5ms)[0m  begin transaction
+  [1m[36m (0.9ms)[0m  [1mCREATE TABLE "playlists" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "description" varchar, "movie_id" integer, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.3ms)[0m  CREATE  INDEX "index_playlists_on_movie_id" ON "playlists" ("movie_id")
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_playlists_on_movie_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_playlists_on_movie_id' AND type='index'
+[0m
+  [1m[35m (0.4ms)[0m  CREATE  INDEX "index_playlists_on_user_id" ON "playlists" ("user_id")
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20151018222659"]]
+  [1m[35m (120.5ms)[0m  commit transaction
+Migrating to CreateTags (20151018222946)
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (4.2ms)[0m  CREATE TABLE "tags" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar) 
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20151018222946"]]
+  [1m[35m (164.1ms)[0m  commit transaction
+Migrating to CreateCategories (20151018223058)
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.9ms)[0m  CREATE TABLE "categories" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "description" varchar, "image_url" varchar) 
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20151018223058"]]
+  [1m[35m (142.5ms)[0m  commit transaction
+Migrating to CreateComments (20151018223200)
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.8ms)[0m  CREATE TABLE "comments" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar, "user_id" integer) 
+  [1m[36m (0.4ms)[0m  [1mCREATE  INDEX "index_comments_on_user_id" ON "comments" ("user_id")[0m
+  [1m[35mSQL (1.9ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20151018223200"]]
+  [1m[36m (140.7ms)[0m  [1mcommit transaction[0m
+Migrating to CreateTaggings (20151018230651)
+  [1m[35m (0.4ms)[0m  begin transaction
+  [1m[36m (0.9ms)[0m  [1mCREATE TABLE "taggings" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "movies_id" integer, "tag_id" integer) [0m
+  [1m[35m (0.4ms)[0m  CREATE  INDEX "index_taggings_on_movies_id" ON "taggings" ("movies_id")
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_taggings_on_movies_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_taggings_on_movies_id' AND type='index'
+[0m
+  [1m[35m (0.6ms)[0m  CREATE  INDEX "index_taggings_on_tag_id" ON "taggings" ("tag_id")
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20151018230651"]]
+  [1m[35m (151.3ms)[0m  commit transaction
+Migrating to CreateCategorizings (20151018230758)
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.1ms)[0m  CREATE TABLE "categorizings" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "movies_id" integer, "category_id" integer) 
+  [1m[36m (1.0ms)[0m  [1mCREATE  INDEX "index_categorizings_on_movies_id" ON "categorizings" ("movies_id")[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_categorizings_on_movies_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_categorizings_on_movies_id' AND type='index'
+
+  [1m[36m (0.3ms)[0m  [1mCREATE  INDEX "index_categorizings_on_category_id" ON "categorizings" ("category_id")[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20151018230758"]]
+  [1m[36m (148.0ms)[0m  [1mcommit transaction[0m
+Migrating to RenameTagToTags (20151019124726)
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20151019124726"]]
+  [1m[35m (130.2ms)[0m  commit transaction
+Migrating to RenameMovieToMovies (20151019124818)
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20151019124818"]]
+  [1m[36m (137.5ms)[0m  [1mcommit transaction[0m
+Migrating to RenamePlaylistToPlaylists (20151019124857)
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20151019124857"]]
+  [1m[35m (114.2ms)[0m  commit transaction
+Migrating to RenameCommentToComments (20151019124929)
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20151019124929"]]
+  [1m[36m (114.4ms)[0m  [1mcommit transaction[0m
+Migrating to RenameCommentsToComment (20151023223721)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20151023223721"]]
+  [1m[35m (106.2ms)[0m  commit transaction
+Migrating to RenameMoviesToMovie (20151023223829)
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20151023223829"]]
+  [1m[36m (119.2ms)[0m  [1mcommit transaction[0m
+Migrating to RenamePlaylistsToPlaylist (20151023223921)
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20151023223921"]]
+  [1m[35m (132.0ms)[0m  commit transaction
+Migrating to RenameTagsToTag (20151023223944)
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20151023223944"]]
+  [1m[36m (125.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.6ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_categorizings_on_category_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_categorizings_on_category_id' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_categorizings_on_movies_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_categorizings_on_movies_id' AND type='index'
+
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_comments_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_comments_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_movies_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_movies_on_user_id' AND type='index'
+
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_playlists_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_playlists_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_playlists_on_movie_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_playlists_on_movie_id' AND type='index'
+
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_taggings_on_tag_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_taggings_on_tag_id' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_taggings_on_movies_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_taggings_on_movies_id' AND type='index'
+
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-03 01:57:34 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/railties-4.2.4/lib/rails/templates/rails/welcome/index.html.erb (10.7ms)
+Completed 200 OK in 272ms (Views: 118.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/movies" for 127.0.0.1 at 2015-11-03 01:57:44 +0100
+Processing by Admin::MoviesController#index as HTML
+  [1m[35mMovie Load (0.4ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered admin/movies/index.html.erb within layouts/application (24.5ms)
+Completed 200 OK in 22034ms (Views: 21928.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/admin/movies/new" for 127.0.0.1 at 2015-11-03 01:58:10 +0100
+Processing by Admin::MoviesController#new as HTML
+  Rendered admin/movies/new.html.erb within layouts/application (294.5ms)
+Completed 200 OK in 678ms (Views: 654.2ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/admin/movies" for 127.0.0.1 at 2015-11-03 01:58:24 +0100
+Processing by Admin::MoviesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"26vtlwjQfsIOqzwuSQjKT01SA7boCtWSUB3BD8TryK46HH4pCNfbqfXcpXIoSpZYSydBtGyVIA6IgM2WVv3Gpw==", "movie"=>{"title"=>"Test", "description"=>"test", "all_tags"=>"test test", "author"=>"test", "url"=>"test", "image_url"=>"test"}, "commit"=>"Save"}
+  [1m[36mTag Load (0.5ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE "tags"."name" = ?  ORDER BY "tags"."id" ASC LIMIT 1[0m  [["name", "test test"]]
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "tags" ("name") VALUES (?)[0m  [["name", "test test"]]
+  [1m[35m (233.7ms)[0m  commit transaction
+Completed 500 Internal Server Error in 356ms (ActiveRecord: 236.0ms)
+
+ActiveRecord::UnknownAttributeError (unknown attribute 'movie_id' for Tagging.):
+  app/models/movie.rb:10:in `all_tags='
+  app/controllers/admin/movies_controller.rb:19:in `create'
+
+
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (28.5ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (12.4ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.7ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (96.4ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (1.3ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.8ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.5ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (6.7ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (94.7ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (2.3ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (192.1ms)
+
+
+Started POST "/admin/movies" for 127.0.0.1 at 2015-11-03 02:03:04 +0100
+Processing by Admin::MoviesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"26vtlwjQfsIOqzwuSQjKT01SA7boCtWSUB3BD8TryK46HH4pCNfbqfXcpXIoSpZYSydBtGyVIA6IgM2WVv3Gpw==", "movie"=>{"title"=>"Test", "description"=>"test", "all_tags"=>"test test", "author"=>"test", "url"=>"test", "image_url"=>"test"}, "commit"=>"Save"}
+Completed 500 Internal Server Error in 69ms (ActiveRecord: 5.6ms)
+
+ActiveRecord::UnknownAttributeError (unknown attribute 'all_tags' for Movie.):
+  app/controllers/admin/movies_controller.rb:19:in `create'
+
+
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (16.9ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (20.0ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.4ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (84.9ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.6ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (48.2ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (104.3ms)
+
+
+Started POST "/admin/movies" for 127.0.0.1 at 2015-11-03 02:03:33 +0100
+Processing by Admin::MoviesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"26vtlwjQfsIOqzwuSQjKT01SA7boCtWSUB3BD8TryK46HH4pCNfbqfXcpXIoSpZYSydBtGyVIA6IgM2WVv3Gpw==", "movie"=>{"title"=>"Test", "description"=>"test", "all_tags"=>"test test", "author"=>"test", "url"=>"test", "image_url"=>"test"}, "commit"=>"Save"}
+  [1m[36mTag Load (0.5ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE "tags"."name" = ?  ORDER BY "tags"."id" ASC LIMIT 1[0m  [["name", "test test"]]
+Completed 500 Internal Server Error in 91ms (ActiveRecord: 6.4ms)
+
+ActiveRecord::UnknownAttributeError (unknown attribute 'movie_id' for Tagging.):
+  app/models/movie.rb:10:in `all_tags='
+  app/controllers/admin/movies_controller.rb:19:in `create'
+
+
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (17.4ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.5ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (5.1ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (75.7ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (1.2ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.9ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.8ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (47.6ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (1.1ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (101.6ms)
+
+
+Started GET "/admin/movies" for 127.0.0.1 at 2015-11-03 02:03:44 +0100
+Processing by Admin::MoviesController#index as HTML
+  [1m[35mMovie Load (2.4ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered admin/movies/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 405ms (Views: 401.5ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/admin/movies/new" for 127.0.0.1 at 2015-11-03 02:03:47 +0100
+Processing by Admin::MoviesController#new as HTML
+  Rendered admin/movies/new.html.erb within layouts/application (22.0ms)
+Completed 200 OK in 398ms (Views: 396.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/admin/movies" for 127.0.0.1 at 2015-11-03 02:03:59 +0100
+Processing by Admin::MoviesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"a4gIazh/K65aELJwt2+FRbKDOXBnncz0g9IRwqCn6PCKP5vVOHiOxaFnKyzWLdlStPZ7cuMCOWhbTx1bMrHm+Q==", "movie"=>{"title"=>"x", "description"=>"x", "all_tags"=>"", "author"=>"x", "url"=>"x", "image_url"=>"x"}, "commit"=>"Save"}
+  [1m[36m (3.8ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "movies" ("title", "description", "url", "image_url", "author", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["title", "x"], ["description", "x"], ["url", "x"], ["image_url", "x"], ["author", "x"], ["created_at", "2015-11-03 01:03:59.990901"], ["updated_at", "2015-11-03 01:03:59.990901"]]
+  [1m[36m (223.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://0.0.0.0:3000/admin/movies
+Completed 302 Found in 255ms (ActiveRecord: 227.6ms)
+
+
+Started GET "/admin/movies" for 127.0.0.1 at 2015-11-03 02:04:00 +0100
+Processing by Admin::MoviesController#index as HTML
+  [1m[35mMovie Load (0.7ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered admin/movies/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 356ms (Views: 354.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/admin/movies/1" for 127.0.0.1 at 2015-11-03 02:04:10 +0100
+Processing by Admin::MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (0.6ms)[0m  [1mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mTag Load (2.5ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."movie_id" = ?  [[nil, 1]]
+SQLite3::SQLException: no such column: taggings.movie_id: SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."movie_id" = ?
+  Rendered admin/movies/show.html.erb within layouts/application (50.9ms)
+Completed 500 Internal Server Error in 90ms (ActiveRecord: 3.1ms)
+
+ActionView::Template::Error (SQLite3::SQLException: no such column: taggings.movie_id: SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."movie_id" = ?):
+    4:       <span class=""><strong>Author:</strong> <%= @movie.author%></span>
+    5:       <span class=""><strong>Added by:</strong> USER TODO</span>
+    6:       <span class=""><strong>Added on:</strong> <%= @movie.created_at.to_s(:db) %></span>
+    7:       <div class=""><strong>Tags:</strong> <%= @movie.all_tags %></div>
+    8:       <div class=""><strong>Categories:</strong> <%= @movie.all_categories %></div>
+    9:       <div class=""><strong>Rating:</strong> <%= @movie.rating %></div>
+   10:     </header>
+  app/models/movie.rb:16:in `all_tags'
+  app/views/admin/movies/show.html.erb:7:in `_app_views_admin_movies_show_html_erb___48255637__636911798'
+
+
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (31.0ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (9.7ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.6ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (86.3ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.9ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.8ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (43.9ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (105.5ms)
+
+
+Started GET "/admin/movies/1" for 127.0.0.1 at 2015-11-03 02:04:11 +0100
+Processing by Admin::MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mTag Load (2.0ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."movie_id" = ?  [[nil, 1]]
+SQLite3::SQLException: no such column: taggings.movie_id: SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."movie_id" = ?
+  Rendered admin/movies/show.html.erb within layouts/application (38.3ms)
+Completed 500 Internal Server Error in 61ms (ActiveRecord: 2.2ms)
+
+ActionView::Template::Error (SQLite3::SQLException: no such column: taggings.movie_id: SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."movie_id" = ?):
+    4:       <span class=""><strong>Author:</strong> <%= @movie.author%></span>
+    5:       <span class=""><strong>Added by:</strong> USER TODO</span>
+    6:       <span class=""><strong>Added on:</strong> <%= @movie.created_at.to_s(:db) %></span>
+    7:       <div class=""><strong>Tags:</strong> <%= @movie.all_tags %></div>
+    8:       <div class=""><strong>Categories:</strong> <%= @movie.all_categories %></div>
+    9:       <div class=""><strong>Rating:</strong> <%= @movie.rating %></div>
+   10:     </header>
+  app/models/movie.rb:16:in `all_tags'
+  app/views/admin/movies/show.html.erb:7:in `_app_views_admin_movies_show_html_erb___48255637__629709278'
+
+
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (24.7ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (9.4ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.7ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (92.8ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (44.3ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.2ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (179.4ms)
+
+
+Started GET "/admin/movies/1" for 127.0.0.1 at 2015-11-03 02:04:12 +0100
+Processing by Admin::MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (14.1ms)[0m  [1mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mTag Load (23.5ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."movie_id" = ?  [[nil, 1]]
+SQLite3::SQLException: no such column: taggings.movie_id: SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."movie_id" = ?
+  Rendered admin/movies/show.html.erb within layouts/application (52.2ms)
+Completed 500 Internal Server Error in 89ms (ActiveRecord: 37.7ms)
+
+ActionView::Template::Error (SQLite3::SQLException: no such column: taggings.movie_id: SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."movie_id" = ?):
+    4:       <span class=""><strong>Author:</strong> <%= @movie.author%></span>
+    5:       <span class=""><strong>Added by:</strong> USER TODO</span>
+    6:       <span class=""><strong>Added on:</strong> <%= @movie.created_at.to_s(:db) %></span>
+    7:       <div class=""><strong>Tags:</strong> <%= @movie.all_tags %></div>
+    8:       <div class=""><strong>Categories:</strong> <%= @movie.all_categories %></div>
+    9:       <div class=""><strong>Rating:</strong> <%= @movie.rating %></div>
+   10:     </header>
+  app/models/movie.rb:16:in `all_tags'
+  app/views/admin/movies/show.html.erb:7:in `_app_views_admin_movies_show_html_erb___48255637__636911798'
+
+
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (21.4ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (8.6ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.3ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (73.8ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.9ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.1ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (43.9ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (91.7ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.4ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.3ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_categorizings_on_category_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_categorizings_on_category_id' AND type='index'
+[0m
+  [1m[35m (0.3ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_categorizings_on_movies_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_categorizings_on_movies_id' AND type='index'
+
+  [1m[36m (0.4ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_comments_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_comments_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_movies_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_movies_on_user_id' AND type='index'
+
+  [1m[36m (0.3ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_playlists_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_playlists_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_playlists_on_movie_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_playlists_on_movie_id' AND type='index'
+
+  [1m[36m (0.3ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_taggings_on_tag_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_taggings_on_tag_id' AND type='index'
+[0m
+  [1m[35m (1.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_taggings_on_movies_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_taggings_on_movies_id' AND type='index'
+
+
+
+Started GET "/admin/movies/1" for 127.0.0.1 at 2015-11-03 02:06:51 +0100
+Processing by Admin::MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (0.5ms)[0m  [1mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mTag Load (1.9ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."movie_id" = ?  [[nil, 1]]
+SQLite3::SQLException: no such column: taggings.movie_id: SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."movie_id" = ?
+  Rendered admin/movies/show.html.erb within layouts/application (9.6ms)
+Completed 500 Internal Server Error in 72ms (ActiveRecord: 4.4ms)
+
+ActionView::Template::Error (SQLite3::SQLException: no such column: taggings.movie_id: SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."movie_id" = ?):
+    4:       <span class=""><strong>Author:</strong> <%= @movie.author%></span>
+    5:       <span class=""><strong>Added by:</strong> USER TODO</span>
+    6:       <span class=""><strong>Added on:</strong> <%= @movie.created_at.to_s(:db) %></span>
+    7:       <div class=""><strong>Tags:</strong> <%= @movie.all_tags %></div>
+    8:       <div class=""><strong>Categories:</strong> <%= @movie.all_categories %></div>
+    9:       <div class=""><strong>Rating:</strong> <%= @movie.rating %></div>
+   10:     </header>
+  app/models/movie.rb:16:in `all_tags'
+  app/views/admin/movies/show.html.erb:7:in `_app_views_admin_movies_show_html_erb___48255637__629709278'
+
+
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (22.9ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (11.2ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (5.0ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (79.8ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.9ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (45.3ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (114.8ms)
+
+
+Started GET "/admin/movies/1" for 127.0.0.1 at 2015-11-03 02:12:11 +0100
+Processing by Admin::MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mTag Load (1.6ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."movie_id" = ?  [[nil, 1]]
+SQLite3::SQLException: no such column: taggings.movie_id: SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."movie_id" = ?
+  Rendered admin/movies/show.html.erb within layouts/application (22.6ms)
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 1.8ms)
+
+ActionView::Template::Error (SQLite3::SQLException: no such column: taggings.movie_id: SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."movie_id" = ?):
+    4:       <span class=""><strong>Author:</strong> <%= @movie.author%></span>
+    5:       <span class=""><strong>Added by:</strong> USER TODO</span>
+    6:       <span class=""><strong>Added on:</strong> <%= @movie.created_at.to_s(:db) %></span>
+    7:       <div class=""><strong>Tags:</strong> <%= @movie.all_tags %></div>
+    8:       <div class=""><strong>Categories:</strong> <%= @movie.all_categories %></div>
+    9:       <div class=""><strong>Rating:</strong> <%= @movie.rating %></div>
+   10:     </header>
+  app/models/movie.rb:16:in `all_tags'
+  app/views/admin/movies/show.html.erb:7:in `_app_views_admin_movies_show_html_erb___48255637__629709278'
+
+
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (24.9ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (36.1ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.9ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (118.1ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.9ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.9ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.8ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (57.0ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.8ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (13.0ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (125.3ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.3ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_categorizings_on_category_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_categorizings_on_category_id' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_categorizings_on_movies_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_categorizings_on_movies_id' AND type='index'
+
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_comments_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_comments_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_movies_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_movies_on_user_id' AND type='index'
+
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_playlists_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_playlists_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_playlists_on_movie_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_playlists_on_movie_id' AND type='index'
+
+  [1m[36m (0.6ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_taggings_on_tag_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_taggings_on_tag_id' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_taggings_on_movies_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_taggings_on_movies_id' AND type='index'
+
+
+
+Started GET "/admin/movies/1" for 127.0.0.1 at 2015-11-03 02:13:31 +0100
+Processing by Admin::MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (2.1ms)[0m  [1mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mTag Load (1.9ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."movie_id" = ?  [[nil, 1]]
+SQLite3::SQLException: no such column: taggings.movie_id: SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."movie_id" = ?
+  Rendered admin/movies/show.html.erb within layouts/application (7.7ms)
+Completed 500 Internal Server Error in 76ms (ActiveRecord: 7.7ms)
+
+ActionView::Template::Error (SQLite3::SQLException: no such column: taggings.movie_id: SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."movie_id" = ?):
+    4:       <span class=""><strong>Author:</strong> <%= @movie.author%></span>
+    5:       <span class=""><strong>Added by:</strong> USER TODO</span>
+    6:       <span class=""><strong>Added on:</strong> <%= @movie.created_at.to_s(:db) %></span>
+    7:       <div class=""><strong>Tags:</strong> <%= @movie.all_tags %></div>
+    8:       <div class=""><strong>Categories:</strong> <%= @movie.all_categories %></div>
+    9:       <div class=""><strong>Rating:</strong> <%= @movie.rating %></div>
+   10:     </header>
+  app/models/movie.rb:16:in `all_tags'
+  app/views/admin/movies/show.html.erb:7:in `_app_views_admin_movies_show_html_erb___48255637__629709278'
+
+
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (24.5ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (10.8ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.7ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (80.2ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (1.2ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.1ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.8ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (55.0ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.8ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (113.8ms)
+  [1m[36m (106.6ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.3ms)[0m  select sqlite_version(*)
+  [1m[36m (99.6ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateMovies (20151018222053)
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.8ms)[0m  CREATE TABLE "movies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "description" varchar, "url" varchar, "author" varchar, "image_url" varchar, "rating" integer, "published" boolean, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.3ms)[0m  [1mCREATE  INDEX "index_movies_on_user_id" ON "movies" ("user_id")[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20151018222053"]]
+  [1m[36m (130.3ms)[0m  [1mcommit transaction[0m
+Migrating to CreatePlaylists (20151018222659)
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.9ms)[0m  [1mCREATE TABLE "playlists" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "description" varchar, "movie_id" integer, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.4ms)[0m  CREATE  INDEX "index_playlists_on_movie_id" ON "playlists" ("movie_id")
+  [1m[36m (0.3ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_playlists_on_movie_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_playlists_on_movie_id' AND type='index'
+[0m
+  [1m[35m (6.8ms)[0m  CREATE  INDEX "index_playlists_on_user_id" ON "playlists" ("user_id")
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20151018222659"]]
+  [1m[35m (101.1ms)[0m  commit transaction
+Migrating to CreateTags (20151018222946)
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (9.6ms)[0m  CREATE TABLE "tags" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar) 
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20151018222946"]]
+  [1m[35m (100.6ms)[0m  commit transaction
+Migrating to CreateCategories (20151018223058)
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.1ms)[0m  CREATE TABLE "categories" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "description" varchar, "image_url" varchar) 
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20151018223058"]]
+  [1m[35m (101.9ms)[0m  commit transaction
+Migrating to CreateComments (20151018223200)
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (9.1ms)[0m  CREATE TABLE "comments" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar, "user_id" integer) 
+  [1m[36m (0.3ms)[0m  [1mCREATE  INDEX "index_comments_on_user_id" ON "comments" ("user_id")[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20151018223200"]]
+  [1m[36m (101.9ms)[0m  [1mcommit transaction[0m
+Migrating to CreateTaggings (20151018230651)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.7ms)[0m  [1mCREATE TABLE "taggings" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "movie_id" integer, "tag_id" integer) [0m
+  [1m[35m (0.3ms)[0m  CREATE  INDEX "index_taggings_on_movie_id" ON "taggings" ("movie_id")
+  [1m[36m (5.3ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_taggings_on_movie_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_taggings_on_movie_id' AND type='index'
+[0m
+  [1m[35m (0.4ms)[0m  CREATE  INDEX "index_taggings_on_tag_id" ON "taggings" ("tag_id")
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20151018230651"]]
+  [1m[35m (96.7ms)[0m  commit transaction
+Migrating to CreateCategorizings (20151018230758)
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.8ms)[0m  CREATE TABLE "categorizings" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "movies_id" integer, "category_id" integer) 
+  [1m[36m (0.3ms)[0m  [1mCREATE  INDEX "index_categorizings_on_movies_id" ON "categorizings" ("movies_id")[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_categorizings_on_movies_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_categorizings_on_movies_id' AND type='index'
+
+  [1m[36m (0.3ms)[0m  [1mCREATE  INDEX "index_categorizings_on_category_id" ON "categorizings" ("category_id")[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20151018230758"]]
+  [1m[36m (100.0ms)[0m  [1mcommit transaction[0m
+Migrating to RenameTagToTags (20151019124726)
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20151019124726"]]
+  [1m[35m (94.2ms)[0m  commit transaction
+Migrating to RenameMovieToMovies (20151019124818)
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20151019124818"]]
+  [1m[36m (94.4ms)[0m  [1mcommit transaction[0m
+Migrating to RenamePlaylistToPlaylists (20151019124857)
+  [1m[35m (0.8ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20151019124857"]]
+  [1m[35m (128.0ms)[0m  commit transaction
+Migrating to RenameCommentToComments (20151019124929)
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20151019124929"]]
+  [1m[36m (116.3ms)[0m  [1mcommit transaction[0m
+Migrating to RenameCommentsToComment (20151023223721)
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20151023223721"]]
+  [1m[35m (100.9ms)[0m  commit transaction
+Migrating to RenameMoviesToMovie (20151023223829)
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20151023223829"]]
+  [1m[36m (95.3ms)[0m  [1mcommit transaction[0m
+Migrating to RenamePlaylistsToPlaylist (20151023223921)
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (1.6ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20151023223921"]]
+  [1m[35m (106.5ms)[0m  commit transaction
+Migrating to RenameTagsToTag (20151023223944)
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20151023223944"]]
+  [1m[36m (104.1ms)[0m  [1mcommit transaction[0m
+Migrating to CreateUsers (20151025082953)
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (1.8ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "login" varchar, "email" varchar, "password" varchar, "confirm_password" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35mSQL (1.8ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20151025082953"]]
+  [1m[36m (109.5ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.3ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_categorizings_on_category_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_categorizings_on_category_id' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_categorizings_on_movies_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_categorizings_on_movies_id' AND type='index'
+
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_comments_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_comments_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_movies_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_movies_on_user_id' AND type='index'
+
+  [1m[36m (0.3ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_playlists_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_playlists_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_playlists_on_movie_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_playlists_on_movie_id' AND type='index'
+
+  [1m[36m (0.3ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_taggings_on_tag_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_taggings_on_tag_id' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_taggings_on_movie_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_taggings_on_movie_id' AND type='index'
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mUser Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'monia@monia.com' LIMIT 1[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "users" ("login", "email", "password", "confirm_password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["login", "Monia"], ["email", "monia@monia.com"], ["password", "monia"], ["confirm_password", "monia"], ["created_at", "2015-11-03 01:16:38.975632"], ["updated_at", "2015-11-03 01:16:38.975632"]]
+  [1m[36m (106.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'ala@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("login", "email", "password", "confirm_password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["login", "Ala"], ["email", "ala@gmail.com"], ["password", "ala"], ["confirm_password", "ala"], ["created_at", "2015-11-03 01:16:39.088964"], ["updated_at", "2015-11-03 01:16:39.088964"]]
+  [1m[36m (103.6ms)[0m  [1mcommit transaction[0m
+
+
+Started GET "/admin/movies/1" for 127.0.0.1 at 2015-11-03 02:16:44 +0100
+Processing by Admin::MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (0.4ms)[0m  [1mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 404 Not Found in 88ms (ActiveRecord: 6.6ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Movie with 'id'=1):
+  app/controllers/admin/movies_controller.rb:8:in `show'
+
+
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (50.4ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (17.1ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (11.4ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (213.5ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (5.9ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (5.4ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (2.7ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (6.1ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (150.3ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (6.1ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (320.9ms)
+
+
+Started GET "/admin/movies" for 127.0.0.1 at 2015-11-03 02:16:59 +0100
+Processing by Admin::MoviesController#index as HTML
+  [1m[35mMovie Load (2.2ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered admin/movies/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 419ms (Views: 412.6ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/admin/movies/new" for 127.0.0.1 at 2015-11-03 02:17:01 +0100
+Processing by Admin::MoviesController#new as HTML
+  Rendered admin/movies/new.html.erb within layouts/application (29.2ms)
+Completed 200 OK in 610ms (Views: 594.3ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/admin/movies" for 127.0.0.1 at 2015-11-03 02:18:47 +0100
+Processing by Admin::MoviesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"36dPEEaFDio/2qn8Y/iLgfvtSvIggfwLr7ydpgzQXq4+ENyuRoKrQcStMKACuteW/ZgI8KQeCZd3IZE/nsZQpw==", "movie"=>{"title"=>"Pierwszy film", "description"=>"Test Lorem ipsum desc", "all_tags"=>"alive, tags, wow, rails", "author"=>"Author Wrath", "url"=>"<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/5AxwaszFbDw\" frameborder=\"0\" allowfullscreen></iframe>", "image_url"=>"http://placehold.it/640x480"}, "commit"=>"Save"}
+  [1m[36mTag Load (1.9ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE "tags"."name" = ?  ORDER BY "tags"."id" ASC LIMIT 1[0m  [["name", "alive"]]
+  [1m[35m (10.8ms)[0m  begin transaction
+  [1m[36mSQL (1.8ms)[0m  [1mINSERT INTO "tags" ("name") VALUES (?)[0m  [["name", "alive"]]
+  [1m[35m (243.3ms)[0m  commit transaction
+  [1m[36mTag Load (0.2ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE "tags"."name" = ?  ORDER BY "tags"."id" ASC LIMIT 1[0m  [["name", "tags"]]
+  [1m[35m (8.7ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "tags" ("name") VALUES (?)[0m  [["name", "tags"]]
+  [1m[35m (100.4ms)[0m  commit transaction
+  [1m[36mTag Load (0.2ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE "tags"."name" = ?  ORDER BY "tags"."id" ASC LIMIT 1[0m  [["name", "wow"]]
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "tags" ("name") VALUES (?)[0m  [["name", "wow"]]
+  [1m[35m (99.2ms)[0m  commit transaction
+  [1m[36mTag Load (0.2ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE "tags"."name" = ?  ORDER BY "tags"."id" ASC LIMIT 1[0m  [["name", "rails"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (10.7ms)[0m  [1mINSERT INTO "tags" ("name") VALUES (?)[0m  [["name", "rails"]]
+  [1m[35m (95.5ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "movies" ("title", "description", "url", "image_url", "author", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["title", "Pierwszy film"], ["description", "Test Lorem ipsum desc"], ["url", "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/5AxwaszFbDw\" frameborder=\"0\" allowfullscreen></iframe>"], ["image_url", "http://placehold.it/640x480"], ["author", "Author Wrath"], ["created_at", "2015-11-03 01:18:48.046760"], ["updated_at", "2015-11-03 01:18:48.046760"]]
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "taggings" ("tag_id", "movie_id") VALUES (?, ?)[0m  [["tag_id", 1], ["movie_id", 1]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "taggings" ("tag_id", "movie_id") VALUES (?, ?)  [["tag_id", 2], ["movie_id", 1]]
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "taggings" ("tag_id", "movie_id") VALUES (?, ?)[0m  [["tag_id", 3], ["movie_id", 1]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "taggings" ("tag_id", "movie_id") VALUES (?, ?)  [["tag_id", 4], ["movie_id", 1]]
+  [1m[36m (111.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://0.0.0.0:3000/admin/movies
+Completed 302 Found in 929ms (ActiveRecord: 688.7ms)
+
+
+Started GET "/admin/movies" for 127.0.0.1 at 2015-11-03 02:18:48 +0100
+Processing by Admin::MoviesController#index as HTML
+  [1m[35mMovie Load (0.4ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered admin/movies/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 717ms (Views: 715.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/admin/movies/1" for 127.0.0.1 at 2015-11-03 02:18:53 +0100
+Processing by Admin::MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (1.0ms)[0m  [1mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mTag Load (0.5ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."movie_id" = ?  [["movie_id", 1]]
+  [1m[36mCategory Load (2.5ms)[0m  [1mSELECT "categories".* FROM "categories" INNER JOIN "categorizings" ON "categories"."id" = "categorizings"."category_id" WHERE "categorizings"."movie_id" = ?[0m  [[nil, 1]]
+SQLite3::SQLException: no such column: categorizings.movie_id: SELECT "categories".* FROM "categories" INNER JOIN "categorizings" ON "categories"."id" = "categorizings"."category_id" WHERE "categorizings"."movie_id" = ?
+  Rendered admin/movies/show.html.erb within layouts/application (67.6ms)
+Completed 500 Internal Server Error in 78ms (ActiveRecord: 4.6ms)
+
+ActionView::Template::Error (SQLite3::SQLException: no such column: categorizings.movie_id: SELECT "categories".* FROM "categories" INNER JOIN "categorizings" ON "categories"."id" = "categorizings"."category_id" WHERE "categorizings"."movie_id" = ?):
+     5:       <span class=""><strong>Added by:</strong> USER TODO</span>
+     6:       <span class=""><strong>Added on:</strong> <%= @movie.created_at.to_s(:db) %></span>
+     7:       <div class=""><strong>Tags:</strong> <%= @movie.all_tags %></div>
+     8:       <div class=""><strong>Categories:</strong> <%= @movie.all_categories %></div>
+     9:       <div class=""><strong>Rating:</strong> <%= @movie.rating %></div>
+    10:     </header>
+    11:     <main class="col-md-12">
+  app/models/movie.rb:26:in `all_categories'
+  app/views/admin/movies/show.html.erb:8:in `_app_views_admin_movies_show_html_erb___48255637__636911798'
+
+
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (37.6ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (9.7ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.5ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (130.1ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.9ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.4ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.8ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (65.0ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (5.3ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.2ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (169.4ms)
+
+
+Started GET "/admin/movies/1" for 127.0.0.1 at 2015-11-03 02:18:54 +0100
+Processing by Admin::MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMovie Load (1.5ms)[0m  SELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mTag Load (0.3ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."movie_id" = ?[0m  [["movie_id", 1]]
+  [1m[35mCategory Load (9.0ms)[0m  SELECT "categories".* FROM "categories" INNER JOIN "categorizings" ON "categories"."id" = "categorizings"."category_id" WHERE "categorizings"."movie_id" = ?  [[nil, 1]]
+SQLite3::SQLException: no such column: categorizings.movie_id: SELECT "categories".* FROM "categories" INNER JOIN "categorizings" ON "categories"."id" = "categorizings"."category_id" WHERE "categorizings"."movie_id" = ?
+  Rendered admin/movies/show.html.erb within layouts/application (18.5ms)
+Completed 500 Internal Server Error in 44ms (ActiveRecord: 10.8ms)
+
+ActionView::Template::Error (SQLite3::SQLException: no such column: categorizings.movie_id: SELECT "categories".* FROM "categories" INNER JOIN "categorizings" ON "categories"."id" = "categorizings"."category_id" WHERE "categorizings"."movie_id" = ?):
+     5:       <span class=""><strong>Added by:</strong> USER TODO</span>
+     6:       <span class=""><strong>Added on:</strong> <%= @movie.created_at.to_s(:db) %></span>
+     7:       <div class=""><strong>Tags:</strong> <%= @movie.all_tags %></div>
+     8:       <div class=""><strong>Categories:</strong> <%= @movie.all_categories %></div>
+     9:       <div class=""><strong>Rating:</strong> <%= @movie.rating %></div>
+    10:     </header>
+    11:     <main class="col-md-12">
+  app/models/movie.rb:26:in `all_categories'
+  app/views/admin/movies/show.html.erb:8:in `_app_views_admin_movies_show_html_erb___48255637__629709278'
+
+
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (41.8ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (17.0ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (7.3ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (127.5ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (2.7ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.8ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (75.7ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.8ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (3.8ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (164.3ms)
+  [1m[36m (96.6ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.4ms)[0m  select sqlite_version(*)
+  [1m[36m (99.4ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateMovies (20151018222053)
+  [1m[36m (1.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (7.9ms)[0m  CREATE TABLE "movies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "description" varchar, "url" varchar, "author" varchar, "image_url" varchar, "rating" integer, "published" boolean, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (2.8ms)[0m  [1mCREATE  INDEX "index_movies_on_user_id" ON "movies" ("user_id")[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20151018222053"]]
+  [1m[36m (97.1ms)[0m  [1mcommit transaction[0m
+Migrating to CreatePlaylists (20151018222659)
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.8ms)[0m  [1mCREATE TABLE "playlists" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "description" varchar, "movie_id" integer, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.3ms)[0m  CREATE  INDEX "index_playlists_on_movie_id" ON "playlists" ("movie_id")
+  [1m[36m (0.3ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_playlists_on_movie_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_playlists_on_movie_id' AND type='index'
+[0m
+  [1m[35m (0.4ms)[0m  CREATE  INDEX "index_playlists_on_user_id" ON "playlists" ("user_id")
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20151018222659"]]
+  [1m[35m (115.1ms)[0m  commit transaction
+Migrating to CreateTags (20151018222946)
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.7ms)[0m  CREATE TABLE "tags" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar) 
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20151018222946"]]
+  [1m[35m (96.6ms)[0m  commit transaction
+Migrating to CreateCategories (20151018223058)
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (6.0ms)[0m  CREATE TABLE "categories" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "description" varchar, "image_url" varchar) 
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20151018223058"]]
+  [1m[35m (110.2ms)[0m  commit transaction
+Migrating to CreateComments (20151018223200)
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.9ms)[0m  CREATE TABLE "comments" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" varchar, "user_id" integer) 
+  [1m[36m (0.3ms)[0m  [1mCREATE  INDEX "index_comments_on_user_id" ON "comments" ("user_id")[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20151018223200"]]
+  [1m[36m (104.9ms)[0m  [1mcommit transaction[0m
+Migrating to CreateTaggings (20151018230651)
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.7ms)[0m  [1mCREATE TABLE "taggings" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "movie_id" integer, "tag_id" integer) [0m
+  [1m[35m (0.5ms)[0m  CREATE  INDEX "index_taggings_on_movie_id" ON "taggings" ("movie_id")
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_taggings_on_movie_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_taggings_on_movie_id' AND type='index'
+[0m
+  [1m[35m (0.3ms)[0m  CREATE  INDEX "index_taggings_on_tag_id" ON "taggings" ("tag_id")
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20151018230651"]]
+  [1m[35m (115.8ms)[0m  commit transaction
+Migrating to CreateCategorizings (20151018230758)
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.8ms)[0m  CREATE TABLE "categorizings" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "movie_id" integer, "category_id" integer) 
+  [1m[36m (6.8ms)[0m  [1mCREATE  INDEX "index_categorizings_on_movie_id" ON "categorizings" ("movie_id")[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_categorizings_on_movie_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_categorizings_on_movie_id' AND type='index'
+
+  [1m[36m (0.3ms)[0m  [1mCREATE  INDEX "index_categorizings_on_category_id" ON "categorizings" ("category_id")[0m
+  [1m[35mSQL (4.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20151018230758"]]
+  [1m[36m (133.3ms)[0m  [1mcommit transaction[0m
+Migrating to RenameTagToTags (20151019124726)
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20151019124726"]]
+  [1m[35m (100.7ms)[0m  commit transaction
+Migrating to RenameMovieToMovies (20151019124818)
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20151019124818"]]
+  [1m[36m (107.6ms)[0m  [1mcommit transaction[0m
+Migrating to RenamePlaylistToPlaylists (20151019124857)
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20151019124857"]]
+  [1m[35m (103.5ms)[0m  commit transaction
+Migrating to RenameCommentToComments (20151019124929)
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (15.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20151019124929"]]
+  [1m[36m (102.4ms)[0m  [1mcommit transaction[0m
+Migrating to RenameCommentsToComment (20151023223721)
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20151023223721"]]
+  [1m[35m (111.8ms)[0m  commit transaction
+Migrating to RenameMoviesToMovie (20151023223829)
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20151023223829"]]
+  [1m[36m (94.9ms)[0m  [1mcommit transaction[0m
+Migrating to RenamePlaylistsToPlaylist (20151023223921)
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (4.4ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20151023223921"]]
+  [1m[35m (110.0ms)[0m  commit transaction
+Migrating to RenameTagsToTag (20151023223944)
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20151023223944"]]
+  [1m[36m (94.2ms)[0m  [1mcommit transaction[0m
+Migrating to CreateUsers (20151025082953)
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.8ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "login" varchar, "email" varchar, "password" varchar, "confirm_password" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20151025082953"]]
+  [1m[36m (147.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (1.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_categorizings_on_category_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_categorizings_on_category_id' AND type='index'
+[0m
+  [1m[35m (0.6ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_categorizings_on_movie_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_categorizings_on_movie_id' AND type='index'
+
+  [1m[36m (0.9ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_comments_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_comments_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_movies_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_movies_on_user_id' AND type='index'
+
+  [1m[36m (0.3ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_playlists_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_playlists_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_playlists_on_movie_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_playlists_on_movie_id' AND type='index'
+
+  [1m[36m (0.3ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_taggings_on_tag_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_taggings_on_tag_id' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_taggings_on_movie_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_taggings_on_movie_id' AND type='index'
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mUser Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'monia@monia.com' LIMIT 1[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "users" ("login", "email", "password", "confirm_password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["login", "Monia"], ["email", "monia@monia.com"], ["password", "monia"], ["confirm_password", "monia"], ["created_at", "2015-11-03 01:20:39.260730"], ["updated_at", "2015-11-03 01:20:39.260730"]]
+  [1m[36m (102.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'ala@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("login", "email", "password", "confirm_password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["login", "Ala"], ["email", "ala@gmail.com"], ["password", "ala"], ["confirm_password", "ala"], ["created_at", "2015-11-03 01:20:39.370234"], ["updated_at", "2015-11-03 01:20:39.370234"]]
+  [1m[36m (99.5ms)[0m  [1mcommit transaction[0m
+
+
+Started GET "/admin/movies" for 127.0.0.1 at 2015-11-03 02:20:49 +0100
+Processing by Admin::MoviesController#index as HTML
+  [1m[36mMovie Load (4.5ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered admin/movies/index.html.erb within layouts/application (11.7ms)
+Completed 200 OK in 379ms (Views: 361.0ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/assets/admin/movie.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-11-03 02:20:50 +0100
+
+
+Started GET "/assets/playlist.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-11-03 02:20:50 +0100
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-11-03 02:20:50 +0100
+
+
+Started GET "/assets/application.self-d354f167617c04fc7ad58384b242aba4cce8134c43c1a91307ac27349fff036b.css?body=1" for 127.0.0.1 at 2015-11-03 02:20:50 +0100
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-11-03 02:20:50 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-11-03 02:20:50 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-11-03 02:20:50 +0100
+
+
+Started GET "/assets/bootstrap/affix.self-f7aef9d98ee5ece34a6a92a6a15bba777d93e8d908b75c95a85088277f394200.js?body=1" for 127.0.0.1 at 2015-11-03 02:20:50 +0100
+
+
+Started GET "/assets/bootstrap/alert.self-896ab026e6823f5cef2441e07dac53d0692a5b772ac58b1ce20aa624c342d3f4.js?body=1" for 127.0.0.1 at 2015-11-03 02:20:50 +0100
+
+
+Started GET "/assets/bootstrap/button.self-d19f3e2bcd3a7a4d75c11b9141b3fabd2c11987da1e99c85548ec3ecf8db30c3.js?body=1" for 127.0.0.1 at 2015-11-03 02:20:50 +0100
+
+
+Started GET "/assets/bootstrap/carousel.self-b2e5e14483e6c31343a83861b7d487620f143d6fc2d07d5ae7544b6b225ba6be.js?body=1" for 127.0.0.1 at 2015-11-03 02:20:50 +0100
+
+
+Started GET "/assets/bootstrap/collapse.self-93820e9b486e375a7fb4477602def3a6f8381fa6d50938d5378297ffbe4a1248.js?body=1" for 127.0.0.1 at 2015-11-03 02:20:50 +0100
+
+
+Started GET "/assets/bootstrap/dropdown.self-30536ae4d54b2685c26b5787ed0eb549a9075717fe690cce6270873bedf2df00.js?body=1" for 127.0.0.1 at 2015-11-03 02:20:50 +0100
+
+
+Started GET "/assets/bootstrap/tab.self-9b77df34cbbb08ec93a806d6cdb741f04e3dbf3389978a0679146f2d2987bc89.js?body=1" for 127.0.0.1 at 2015-11-03 02:20:50 +0100
+
+
+Started GET "/assets/bootstrap/transition.self-9616c4e856b57659b67da3c6f2adcd584b5601ef4bebcdadab8ebb387d80bb25.js?body=1" for 127.0.0.1 at 2015-11-03 02:20:50 +0100
+
+
+Started GET "/assets/bootstrap/scrollspy.self-c5c6ed008955656d345067e9821d79f1216b8383134d08465d4aa1a33a2b93b4.js?body=1" for 127.0.0.1 at 2015-11-03 02:20:50 +0100
+
+
+Started GET "/assets/bootstrap/modal.self-bcfe54f3132bf16a8c5ce4289e47eba488f6522a08f49f378a037061c6c7aa4c.js?body=1" for 127.0.0.1 at 2015-11-03 02:20:50 +0100
+
+
+Started GET "/assets/bootstrap/tooltip.self-3aa41fbe871573b34e0ebddf31598cd5a11a9841ca85f90934ea46326e46626d.js?body=1" for 127.0.0.1 at 2015-11-03 02:20:50 +0100
+
+
+Started GET "/assets/bootstrap/popover.self-b73e9c9111d01148e24bbc46e096782e024dc5db630e7078cf11ed2587ef8551.js?body=1" for 127.0.0.1 at 2015-11-03 02:20:50 +0100
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2015-11-03 02:20:50 +0100
+
+
+Started GET "/assets/admin/movie.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-03 02:20:50 +0100
+
+
+Started GET "/assets/playlist.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-03 02:20:50 +0100
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-03 02:20:50 +0100
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for 127.0.0.1 at 2015-11-03 02:20:50 +0100
+
+
+Started GET "/admin/movies/new" for 127.0.0.1 at 2015-11-03 02:20:52 +0100
+Processing by Admin::MoviesController#new as HTML
+  Rendered admin/movies/new.html.erb within layouts/application (31.9ms)
+Completed 200 OK in 385ms (Views: 365.2ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/admin/movies" for 127.0.0.1 at 2015-11-03 02:21:32 +0100
+Processing by Admin::MoviesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"epv7RTZZtuAONnVjaApkH6AOPtXXMUQE/CzXH7y5HK+bLGj7Nl4Ti/VB7D8JSDgIpnt811OusZgksduGLq8Spg==", "movie"=>{"title"=>"Testr", "description"=>"Lorem ipsm", "all_tags"=>"alive, tags, wow, rails", "author"=>"Author Wrath", "url"=>"www.youtube.com/embed/5AxwaszFbDw", "image_url"=>"http://placehold.it/640x480"}, "commit"=>"Save"}
+  [1m[35mTag Load (0.4ms)[0m  SELECT  "tags".* FROM "tags" WHERE "tags"."name" = ?  ORDER BY "tags"."id" ASC LIMIT 1  [["name", "alive"]]
+  [1m[36m (2.9ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "tags" ("name") VALUES (?)  [["name", "alive"]]
+  [1m[36m (193.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mTag Load (0.2ms)[0m  SELECT  "tags".* FROM "tags" WHERE "tags"."name" = ?  ORDER BY "tags"."id" ASC LIMIT 1  [["name", "tags"]]
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "tags" ("name") VALUES (?)  [["name", "tags"]]
+  [1m[36m (136.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mTag Load (0.2ms)[0m  SELECT  "tags".* FROM "tags" WHERE "tags"."name" = ?  ORDER BY "tags"."id" ASC LIMIT 1  [["name", "wow"]]
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "tags" ("name") VALUES (?)  [["name", "wow"]]
+  [1m[36m (115.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mTag Load (1.2ms)[0m  SELECT  "tags".* FROM "tags" WHERE "tags"."name" = ?  ORDER BY "tags"."id" ASC LIMIT 1  [["name", "rails"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "tags" ("name") VALUES (?)  [["name", "rails"]]
+  [1m[36m (269.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (2.3ms)[0m  [1mINSERT INTO "movies" ("title", "description", "url", "image_url", "author", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Testr"], ["description", "Lorem ipsm"], ["url", "www.youtube.com/embed/5AxwaszFbDw"], ["image_url", "http://placehold.it/640x480"], ["author", "Author Wrath"], ["created_at", "2015-11-03 01:21:32.973225"], ["updated_at", "2015-11-03 01:21:32.973225"]]
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "taggings" ("tag_id", "movie_id") VALUES (?, ?)  [["tag_id", 1], ["movie_id", 1]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "taggings" ("tag_id", "movie_id") VALUES (?, ?)[0m  [["tag_id", 2], ["movie_id", 1]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "taggings" ("tag_id", "movie_id") VALUES (?, ?)  [["tag_id", 3], ["movie_id", 1]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "taggings" ("tag_id", "movie_id") VALUES (?, ?)[0m  [["tag_id", 4], ["movie_id", 1]]
+  [1m[35m (107.3ms)[0m  commit transaction
+Redirected to http://0.0.0.0:3000/admin/movies
+Completed 302 Found in 917ms (ActiveRecord: 836.1ms)
+
+
+Started GET "/admin/movies" for 127.0.0.1 at 2015-11-03 02:21:33 +0100
+Processing by Admin::MoviesController#index as HTML
+  [1m[36mMovie Load (0.4ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered admin/movies/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 358ms (Views: 355.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/admin/movies/1" for 127.0.0.1 at 2015-11-03 02:21:37 +0100
+Processing by Admin::MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMovie Load (0.5ms)[0m  SELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mTag Load (0.6ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."movie_id" = ?[0m  [["movie_id", 1]]
+  [1m[35mCategory Load (0.4ms)[0m  SELECT "categories".* FROM "categories" INNER JOIN "categorizings" ON "categories"."id" = "categorizings"."category_id" WHERE "categorizings"."movie_id" = ?  [["movie_id", 1]]
+  Rendered admin/movies/show.html.erb within layouts/application (27.9ms)
+Completed 200 OK in 348ms (Views: 340.9ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/admin/movies/www.youtube.com/embed/5AxwaszFbDw" for 127.0.0.1 at 2015-11-03 02:21:37 +0100
+
+ActionController::RoutingError (No route matches [GET] "/admin/movies/www.youtube.com/embed/5AxwaszFbDw"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/mist/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/mist/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/mist/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (9.0ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (9.4ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (17.5ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (5.1ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (173.2ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.1ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.1ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (56.3ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered /home/mist/.rvm/gems/ruby-2.2.3/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (105.8ms)
+
+
+Started GET "/admin/movies/1/edit" for 127.0.0.1 at 2015-11-03 02:21:52 +0100
+Processing by Admin::MoviesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mTag Load (0.3ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."movie_id" = ?  [["movie_id", 1]]
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT "categories".* FROM "categories" INNER JOIN "categorizings" ON "categories"."id" = "categorizings"."category_id" WHERE "categorizings"."movie_id" = ?[0m  [["movie_id", 1]]
+  Rendered admin/movies/edit.html.erb within layouts/application (19.5ms)
+Completed 200 OK in 437ms (Views: 426.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/admin/movies/1/edit" for 127.0.0.1 at 2015-11-03 02:21:52 +0100
+Processing by Admin::MoviesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMovie Load (0.2ms)[0m  SELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mTag Load (0.3ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."movie_id" = ?[0m  [["movie_id", 1]]
+  [1m[35mCategory Load (0.2ms)[0m  SELECT "categories".* FROM "categories" INNER JOIN "categorizings" ON "categories"."id" = "categorizings"."category_id" WHERE "categorizings"."movie_id" = ?  [["movie_id", 1]]
+  Rendered admin/movies/edit.html.erb within layouts/application (31.6ms)
+Completed 200 OK in 431ms (Views: 428.8ms | ActiveRecord: 0.7ms)
+
+
+Started PATCH "/admin/movies/1" for 127.0.0.1 at 2015-11-03 02:22:03 +0100
+Processing by Admin::MoviesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qSJfdKyPunajzJ6XcvcOeENQiRjq3rfr9I9ESeW6ClFIlczKrIgfHVi7B8sTtVJvRSXLGm5BQncsEkjQd6wEWA==", "movie"=>{"title"=>"Testr", "description"=>"Lorem ipsm", "all_tags"=>"alive, tags, wow, rails", "all_categories"=>"", "author"=>"Author Wrath", "url"=>"http://www.youtube.com/embed/5AxwaszFbDw", "image_url"=>"http://placehold.it/640x480"}, "commit"=>"Save", "id"=>"1"}
+  [1m[36mMovie Load (1.8ms)[0m  [1mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mTag Load (0.2ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE "tags"."name" = ?  ORDER BY "tags"."id" ASC LIMIT 1[0m  [["name", "alive"]]
+  [1m[35mTag Load (0.1ms)[0m  SELECT  "tags".* FROM "tags" WHERE "tags"."name" = ?  ORDER BY "tags"."id" ASC LIMIT 1  [["name", "tags"]]
+  [1m[36mTag Load (0.2ms)[0m  [1mSELECT  "tags".* FROM "tags" WHERE "tags"."name" = ?  ORDER BY "tags"."id" ASC LIMIT 1[0m  [["name", "wow"]]
+  [1m[35mTag Load (0.1ms)[0m  SELECT  "tags".* FROM "tags" WHERE "tags"."name" = ?  ORDER BY "tags"."id" ASC LIMIT 1  [["name", "rails"]]
+  [1m[36mTag Load (0.1ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."movie_id" = ?[0m  [["movie_id", 1]]
+  [1m[35mCategory Load (0.1ms)[0m  SELECT "categories".* FROM "categories" INNER JOIN "categorizings" ON "categories"."id" = "categorizings"."category_id" WHERE "categorizings"."movie_id" = ?  [["movie_id", 1]]
+  [1m[36mSQL (0.6ms)[0m  [1mUPDATE "movies" SET "url" = ?, "updated_at" = ? WHERE "movies"."id" = ?[0m  [["url", "http://www.youtube.com/embed/5AxwaszFbDw"], ["updated_at", "2015-11-03 01:22:03.070491"], ["id", 1]]
+  [1m[35m (205.3ms)[0m  commit transaction
+Redirected to http://0.0.0.0:3000/admin/movies/1
+Completed 302 Found in 267ms (ActiveRecord: 208.8ms)
+
+
+Started GET "/admin/movies/1" for 127.0.0.1 at 2015-11-03 02:22:03 +0100
+Processing by Admin::MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mTag Load (0.2ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."movie_id" = ?  [["movie_id", 1]]
+  [1m[36mCategory Load (0.1ms)[0m  [1mSELECT "categories".* FROM "categories" INNER JOIN "categorizings" ON "categories"."id" = "categorizings"."category_id" WHERE "categorizings"."movie_id" = ?[0m  [["movie_id", 1]]
+  Rendered admin/movies/show.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 354ms (Views: 350.4ms | ActiveRecord: 0.6ms)

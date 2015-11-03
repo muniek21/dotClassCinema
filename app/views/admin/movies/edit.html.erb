@@ -1,0 +1,30 @@
+<h1>Edit: <%= @movie.title %></h1>
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <%= form_for [:admin, @movie] do |f| %>
+        <%= f.label :title %>
+        <%= f.text_field :title, class: 'form-control' %>
+        <%= f.label :description %>
+        <%= f.text_area :description, class: 'form-control' %>
+        <%= f.label 'Tags' %>
+        <%= f.text_field :all_tags, class: 'form-control', placeholder: 'Comma separated tags' %>
+        <%= f.label 'Categories' %>
+        <%= f.text_field :all_categories, class: 'form-control', placeholder: 'Comma separated categories' %>
+        <%= f.label :author %>
+        <%= f.text_field :author, class: 'form-control' %>
+        <%= f.label :url %>
+        <%= f.text_field :url, class: 'form-control' %>
+        <%= f.label :image_url %>
+        <%= f.text_field :image_url, class: 'form-control' %>
+        <hr/>
+          <%= f.submit 'Save', class: 'btn btn-success' %>
+          <%= link_to 'Cancel', admin_movie_path(f.object.id), class: 'btn btn-warning' %>
+          <%= link_to 'Delete', admin_delete_movie_path(f.object.id), class: 'btn btn-danger' %>
+    <% end %>
+
+<!--
+    <xxx%= f.label :published %>
+    <xxx%= f.radio_button :published, class: 'form-control' %>
+-->
+  </div>
+</div>

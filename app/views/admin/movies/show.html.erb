@@ -1,0 +1,23 @@
+<article class="row">
+    <header class="col-md-12">
+      <h1><%= @movie.title %></h1>
+      <span class=""><strong>Author:</strong> <%= @movie.author%></span>
+      <span class=""><strong>Added by:</strong> USER TODO</span>
+      <span class=""><strong>Added on:</strong> <%= @movie.created_at.to_s(:db) %></span>
+      <div class=""><strong>Tags:</strong> <%= @movie.all_tags %></div>
+      <div class=""><strong>Categories:</strong> <%= @movie.all_categories %></div>
+      <div class=""><strong>Rating:</strong> <%= @movie.rating %></div>
+    </header>
+    <main class="col-md-12">
+      <iframe class="center-block" width="100%" height="600" src="<%= @movie.url %>" frameborder="0" allowfullscreen></iframe>
+      <%= content_tag('p', @movie.description, class: "col-md-12")%>
+      <div class="comments row">@movie.comments</div>
+    </main>
+    <footer class="col-md-12">
+      <%= link_to 'Back to index', admin_movies_path, class: 'btn btn-primary' %>
+      <%= link_to 'Edit', edit_admin_movie_path(@movie), class: 'btn btn-warning' %>
+      <%= link_to 'Delete', admin_delete_movie_path(@movie), class: 'btn btn-danger' %>
+    </footer>
+</article>
+
+
