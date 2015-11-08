@@ -13,16 +13,14 @@ class UsersController < ApplicationController
 
 	def create
 		@user = User.new(user_params)
-		if @user.password == @user.confirm_password
-			if @user.save
-				redirect_to @user 
-			else
-				render 'new'
-			end
+		if @user.save
+			flash[:success] = "Successfully created user #{@user.login}"
+			redirect_to @user 
 		else
-			flash[:notice] = "Passwords do not match"
+			flash[:notice] = "Unable to save user"
 			render 'new'
 		end
+		
 	end
 
 	def edit
@@ -39,10 +37,13 @@ class UsersController < ApplicationController
 	end
 
 	def destroy
+		@user = User.find(params[:id])
+		@user.destroy
+		redirect_to(:action => 'index')
 	end
 
 	private
 		def user_params
-			params.require(:user).permit(:login, :email, :password, :confirm_password, :id)
+			params.require(:user).permit(:login, :email, :password, :password_confirmation)
 		end
 end

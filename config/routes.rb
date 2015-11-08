@@ -1,13 +1,15 @@
-Rails.application.routes.draw do
-  get '/users' => 'users#index'
-  get '/users/new' => 'users#new'
-  post '/users' => 'users#create'
-  get '/users/:id' => 'users#show', as: :user
-  post 'users' => 'users#create'
-  get 'users/:id/edit' => 'users#edit'
-  patch 'users/:id' => 'users#update'
-  delete 'users/:id' => 'users#destroy'
+  Rails.application.routes.draw do
+  get 'sessions/new'
+  get 'login' => 'sessions#new'
+  post 'login' => 'sessions#create'
+  delete 'logout' => 'sessions#destroy'
 
+  get 'welcome/index' 
+  root 'welcome#index'
+
+    resources :users
+      get 'users/show/:id' => 'users#show', as: :user_profile
+      get 'users/destroy/:id' => 'users#destroy', as: :destroy_user
   namespace :admin do
     resources :movies
 

@@ -1,2 +1,13 @@
-<p><%= @user.login %></p>
-<p><%= @user.email %></p>
+<article class="row">
+    <header class="col-md-12">
+      <h1><%= @user.login %></h1>
+      <span class=""><strong>Added on:</strong> <%= @user.created_at.to_s(:db) %></span>
+    </header>
+    <footer class="col-md-12">
+      <%= link_to 'Back to index', users_path, class: 'btn btn-primary' %>
+      <%= link_to 'Edit', edit_user_path(@user), class: 'btn btn-warning' %>
+      <%= link_to 'Delete', destroy_user_path(@user), class: 'btn btn-danger' %>
+    </footer>
+</article>
+
+
