@@ -8,13 +8,15 @@
   get 'welcome/index' 
   root 'welcome#index'
 
+    resources :playlists
+
     resources :users
       get 'users/show/:id' => 'users#show', as: :user_profile
       get 'users/destroy/:id' => 'users#destroy', as: :destroy_user
   namespace :admin do
     resources :movies
 
-    resources :playlists
+
 
     get 'movies' => 'movies#index'
     get 'movies/show/:id' => 'movies#show'
