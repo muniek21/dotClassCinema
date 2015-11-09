@@ -12,5 +12,5 @@ class User < ActiveRecord::Base
 
 	has_many :playlists
   	has_many :movies, through: :playlists
-
+# dssadds
 end
