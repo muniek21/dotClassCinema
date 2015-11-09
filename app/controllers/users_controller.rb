@@ -33,6 +33,7 @@ class UsersController < ApplicationController
 		if @user.update(user_params)
 			redirect_to @user
 		else
+			flash[:notice] = "Unable to edit user"
 			render 'edit'
 		end
 	end
