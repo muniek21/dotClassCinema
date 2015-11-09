@@ -1,4 +1,5 @@
   Rails.application.routes.draw do
+
   get 'sessions/new'
   get 'login' => 'sessions#new'
   post 'login' => 'sessions#create'
@@ -22,4 +23,7 @@
     get 'movies/delete/:id' => 'movies#destroy', as: :delete_movie
 
   end
+
+  get 'categories' =>'categories#index'
+  get 'categories/:id' => 'categories#show', as: :category
 end

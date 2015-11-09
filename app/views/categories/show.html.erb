@@ -1,0 +1,10 @@
+<h1>Categories#show</h1>
+<p>Find me in app/views/categories/show.html.erb</p>
+
+<%= @category.name %>
+<%= image_tag @category.image_url %>
+<%= @category.description %>
+
+<% @category.movies.each do |movie| %>
+	<%= link_to movie.name, admin_movie %>
+<% end %>

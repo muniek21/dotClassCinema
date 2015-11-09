@@ -1,9 +1,8 @@
 class Movie < ActiveRecord::Base
   # belongs_to :user
+  belongs_to :category
   has_many :comments
   has_many :taggings
-  has_many :categorizings
-  has_many :categories, through: :categorizings
   has_many :tags, through: :taggings
 
   def all_tags=(names)
@@ -16,7 +15,7 @@ class Movie < ActiveRecord::Base
     self.tags.map(&:name).join(", ")
   end
 
-  def all_categories=(names)
+  def all_categories=(names) #zminilam category na belongs_to!! 
     self.categories = names.split(",").map do |name|
       Category.where(name: name.strip).first_or_create!
     end

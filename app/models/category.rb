@@ -1,3 +1,8 @@
 class Category < ActiveRecord::Base
-  has_many :categorizings
+  has_many :movies
+
+  validates	:name, 
+  			presence: true,
+  			uniqueness: true
+
 end
