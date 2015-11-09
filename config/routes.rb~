@@ -13,8 +13,6 @@
   namespace :admin do
     resources :movies
 
-    resources :playlists
-
     get 'movies' => 'movies#index'
     get 'movies/show/:id' => 'movies#show'
     get 'movies/edit/:id' => 'movies#edit'

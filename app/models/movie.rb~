@@ -5,8 +5,6 @@ class Movie < ActiveRecord::Base
   has_many :categorizings
   has_many :categories, through: :categorizings
   has_many :tags, through: :taggings
-  has_many :playlists
-  has_many :users, through: :playlists
 
   def all_tags=(names)
     self.tags = names.split(",").map do |name|

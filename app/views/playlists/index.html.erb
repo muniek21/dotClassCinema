@@ -1,2 +1,12 @@
 <h1>Playlist#index</h1>
 <p>Find me in app/views/playlist/index.html.erb</p>
+<h1>Playlist#index</h1>
+<p>Find me in app/views/playlist/index.html.erb</p>
+<%= @playlists.count %> 
+<ul>
+<% @playlists.count do |p| %>
+<%= p.title %>
+<% end %>
+</ul>
+
+
