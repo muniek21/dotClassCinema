@@ -59,13 +59,12 @@ ActiveRecord::Schema.define(version: 20151108124117) do
     t.datetime "updated_at",  null: false
   end
 
-create_table "movie_playlist_maps", force: :cascade do |t|
+  add_index "playlists", ["movie_id"], name: "index_playlists_on_movie_id"
+  add_index "playlists", ["user_id"], name: "index_playlists_on_user_id"
+
+    create_table "playlists", force: :cascade do |t|
     t.integer "movie_id"
     t.integer "playlist_id"
-  end
-
-  add_index "movie_playlist_maps", ["movie_id"], name: "index_movie_playlist_map_on_movie_id"
-  add_index "movie_playlist_maps", ["playlist_id"], name: "index_movie_playlist_map_on_tag_id"
 
   create_table "taggings", force: :cascade do |t|
     t.integer "movie_id"

@@ -1,4 +1,5 @@
   Rails.application.routes.draw do
+
   get 'sessions/new'
   get 'login' => 'sessions#new'
   post 'login' => 'sessions#create'
@@ -10,8 +11,13 @@
     resources :users
       get 'users/show/:id' => 'users#show', as: :user_profile
       get 'users/destroy/:id' => 'users#destroy', as: :destroy_user
-  namespace :admin do
+
+    resources :playlists  
+
+namespace :admin do
     resources :movies
+
+    
 
     get 'movies' => 'movies#index'
     get 'movies/show/:id' => 'movies#show'
@@ -22,4 +28,7 @@
     get 'movies/delete/:id' => 'movies#destroy', as: :delete_movie
 
   end
+
+  get 'categories' =>'categories#index'
+  get 'categories/:id' => 'categories#show', as: :category
 end
