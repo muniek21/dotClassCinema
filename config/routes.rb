@@ -11,10 +11,12 @@
     resources :users
       get 'users/show/:id' => 'users#show', as: :user_profile
       get 'users/destroy/:id' => 'users#destroy', as: :destroy_user
-  namespace :admin do
-    resources :movies
 
-    resources :playlists
+    resources :playlists  
+#      get 'playlists/add/movie/:playlist_id/:movie_id' => 'playlists#create_movie' as: :playlist_add_movie
+
+namespace :admin do
+    resources :movies
 
     get 'movies' => 'movies#index'
     get 'movies/show/:id' => 'movies#show'
@@ -28,4 +30,5 @@
 
   get 'categories' =>'categories#index'
   get 'categories/:id' => 'categories#show', as: :category
+
 end

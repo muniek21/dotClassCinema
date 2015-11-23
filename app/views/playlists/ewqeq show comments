@@ -1,0 +1,31 @@
+#<!--
+#<h2>Comments</h2>
+# <% @playlist.comments.each do |comment| %>
+#  <p>
+#    <strong>Commenter:</strong>
+    <%= comment.commenter %>
+  </p>
+ 
+  <p>
+    <strong>Comment:</strong>
+    <%= comment.body %>
+  </p>
+<% end %> 
+<%= render @playlist.comments %> 
+
+<h2>Add a comment:</h2>
+<%= form_for([@playlist, @playlist.comments.build]) do |f| %>
+  <p>
+    <%= f.label :commenter %><br>
+    <%= f.text_field :commenter %>
+  </p>
+  <p>
+    <%= f.label :body %><br>
+    <%= f.text_area :body %>
+  </p>
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %> 
+
+<%= render 'comments/form' %> -->

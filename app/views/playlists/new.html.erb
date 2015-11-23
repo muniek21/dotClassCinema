@@ -1,9 +1,33 @@
-<h1>Playlist#new</h1>
-<p>Find me in app/views/playlist/new.html.erb</p>
+<h1>New Playlist</h1>
+<%= form_for :playlist, url: playlists_path do |f| %>
 
-<%= form_for @article, url: {action: "create"}, html: {class: "nifty_form"} do |f| %>
-  <%= f.text_field :title %>
-  <%= f.text_field :description %>
-  <%= f.text_area :body, size: "60x12" %>
-  <%= f.submit "Create" %>
+  <% if @playlist.errors.any? %>
+    <div id="error_explanation">
+      <h2>
+        <%= pluralize(@playlist.errors.count, "error") %> prohibited
+        this playlist from being saved:
+      </h2>
+      <ul>
+        <% @playlist.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <p>
+    <%= f.label :title %><br>
+    <%= f.text_field :title %>
+  </p>
+ 
+  <p>
+    <%= f.label :text %><br>
+    <%= f.text_area :description %>
+  </p>
+ 
+  <p>
+    <%= f.submit %>
+  </p>
 <% end %>
+
+<%= link_to 'Back', playlists_path %>

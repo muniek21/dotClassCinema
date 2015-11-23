@@ -1,3 +1,13 @@
-<h1>Playlist#show</h1>
-<p>Find me in app/views/playlist/show.html.erb</p>
-<%= playlists %>
+<p>
+  <strong>Title:</strong>
+  <%= @playlist.title %>
+</p>
+ 
+<p>
+  <strong>Text:</strong>
+  <%= @playlist.description %>
+</p>
+
+
+<%= link_to 'Edit', edit_playlist_path(@playlist) %> |
+<%= link_to 'Back', playlists_path %>
